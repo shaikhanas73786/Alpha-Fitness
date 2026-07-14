@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #111111;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+    width: 100%;
+    padding: 18px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background: rgba(28,28,28,0.95);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    border-bottom: 1px solid #333;
+
+    backdrop-filter: blur(10px);
+}
+
+/* ================= LOGO ================= */
+
+.logo{
+
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #ffffff;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.logo span{
+
+    color: #d6d6d6;
+}
+
+.logo:hover{
+
+    transform: scale(1.05);
+}
+
+/* ================= MENU ================= */
+
+.nav-links{
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    list-style: none;
+}
+
+.nav-links li a{
+
+    text-decoration: none;
+
+    color: #d8d8d8;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    transition: .35s;
+}
+
+.nav-links li a:hover{
+
+    background: #ececec;
+
+    color: #111111;
+
+    box-shadow: 0 0 15px rgba(255,255,255,.25);
+
+    transform: translateY(-2px);
+}
+
+/* ================= BUTTON ================= */
+
+.join-btn{
+
+    padding: 12px 28px;
+
+    background: #ececec;
+
+    color: #111111;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .35s;
+}
+
+.join-btn:hover{
+
+    background: #ffffff;
+
+    transform: scale(1.05);
+
+    box-shadow: 0 0 18px rgba(255,255,255,.4);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+.navbar{
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+.nav-links{
+
+    width: 100%;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.nav-links li a{
+
+    padding: 8px 15px;
+
+    font-size: 15px;
+}
+
+.join-btn{
+
+    width: 200px;
+}
+
+}

@@ -1,0 +1,185 @@
+.footer{
+
+    width:100%;
+
+    background:#101010;
+
+    padding:70px 8% 25px;
+
+    border-top:1px solid #2d2d2d;
+}
+
+.footer-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+    gap:40px;
+}
+
+.footer-box h3{
+
+    color:#ffffff;
+
+    margin-bottom:20px;
+
+    font-size:24px;
+}
+
+.footer-logo{
+
+    color:#ffffff;
+
+    font-size:34px;
+
+    margin-bottom:20px;
+}
+
+.footer-logo span{
+
+    color:#d8d8d8;
+}
+
+.footer-text{
+
+    color:#bdbdbd;
+
+    line-height:1.8;
+
+    font-size:15px;
+}
+
+.footer-box ul{
+
+    list-style:none;
+}
+
+.footer-box ul li{
+
+    margin-bottom:15px;
+}
+
+.footer-box ul li a{
+
+    color:#cfcfcf;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.footer-box ul li a:hover{
+
+    color:#ffffff;
+
+    padding-left:8px;
+}
+
+.footer-box p{
+
+    color:#cfcfcf;
+
+    margin-bottom:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+}
+
+/* ================= SOCIAL ================= */
+
+.social-icons{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:15px;
+}
+
+.social-icons a{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:#ffffff;
+
+    background:#1d1d1d;
+
+    border:1px solid #333;
+
+    border-radius:50%;
+
+    font-size:20px;
+
+    transition:.4s;
+}
+
+.social-icons a:hover{
+
+    transform:translateY(-6px);
+
+    background:#ffffff;
+
+    color:#111111;
+
+    box-shadow:0 15px 30px rgba(255,255,255,.15);
+}
+
+/* ================= COPYRIGHT ================= */
+
+.footer-bottom{
+
+    margin-top:60px;
+
+    padding-top:20px;
+
+    border-top:1px solid #2d2d2d;
+
+    text-align:center;
+}
+
+.footer-bottom p{
+
+    color:#a8a8a8;
+
+    font-size:15px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+.footer{
+
+    padding:60px 20px 20px;
+}
+
+.footer-container{
+
+    text-align:center;
+}
+
+.footer-box p{
+
+    justify-content:center;
+}
+
+.social-icons{
+
+    justify-content:center;
+}
+
+}

@@ -1,0 +1,91 @@
+.trainers{
+
+    width:100%;
+
+    padding:100px 8%;
+
+    background:#111111;
+}
+
+/* Heading */
+
+.trainers-heading{
+
+    text-align:center;
+
+    margin-bottom:60px;
+}
+
+.trainers-heading h4{
+
+    color:#bdbdbd;
+
+    font-size:18px;
+
+    letter-spacing:3px;
+
+    margin-bottom:15px;
+}
+
+.trainers-heading h2{
+
+    color:#ffffff;
+
+    font-size:2.8rem;
+
+    margin-bottom:20px;
+}
+
+.trainers-heading p{
+
+    color:#cfcfcf;
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    font-size:17px;
+}
+
+/* Cards */
+
+.trainer-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:stretch;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.trainers{
+
+    padding:80px 20px;
+}
+
+.trainers-heading h2{
+
+    font-size:2.2rem;
+}
+
+.trainers-heading p{
+
+    font-size:16px;
+}
+
+.trainer-container{
+
+    gap:20px;
+}
+
+}

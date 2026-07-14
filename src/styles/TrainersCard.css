@@ -1,0 +1,159 @@
+.trainer-card{
+
+    width:330px;
+
+    background:#1f1f1f;
+
+    border:1px solid #333;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:0.4s ease;
+
+    cursor:pointer;
+}
+
+.trainer-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 30px rgba(255,255,255,0.08);
+}
+
+/* Image */
+
+.trainer-image{
+
+    width:100%;
+
+    height:350px;
+
+    object-fit:cover;
+
+    transition:0.4s ease;
+}
+
+.trainer-card:hover .trainer-image{
+
+    transform:scale(1.05);
+}
+
+/* Content */
+
+.trainer-content{
+
+    padding:25px;
+}
+
+.trainer-name{
+
+    color:#ffffff;
+
+    font-size:28px;
+
+    margin-bottom:8px;
+}
+
+.trainer-role{
+
+    color:#d9d9d9;
+
+    font-size:18px;
+
+    margin-bottom:12px;
+}
+
+.trainer-exp{
+
+    color:#b5b5b5;
+
+    font-size:15px;
+
+    margin-bottom:10px;
+}
+
+.trainer-speciality{
+
+    color:#ffffff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    margin-bottom:15px;
+}
+
+.trainer-description{
+
+    color:#cfcfcf;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+    margin-bottom:25px;
+}
+
+/* Button */
+
+.trainer-btn{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#e5e5e5;
+
+    color:#111111;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s ease;
+}
+
+.trainer-btn:hover{
+
+    background:#ffffff;
+
+    transform:scale(1.03);
+}
+
+/* Responsive */
+
+@media (max-width:900px){
+
+.trainer-card{
+
+    width:100%;
+
+    max-width:350px;
+
+    margin:auto;
+}
+
+.trainer-image{
+
+    height:320px;
+}
+
+.trainer-name{
+
+    font-size:24px;
+}
+
+.trainer-role{
+
+    font-size:17px;
+}
+
+}

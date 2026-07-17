@@ -1,28 +1,44 @@
 import '../styles/Navbar.css'
+import { Link } from 'react-router-dom'
+import { useState } from 'react'
+
 const Navbar = () => {
-    
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const closeMenu = () => setMenuOpen(false);
 
     return (
         <>
             <nav className="navbar">
 
-            <div className="logo">
-                Alpha<span>Fitness</span>
-            </div>
+                <div className="logo">
+                    Alpha<span>Fitness</span>
+                </div>
 
-            <ul className="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Trainers</a></li>
-                <li><a href="#">Membership</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+                <ul className={menuOpen ? "nav-links active" : "nav-links"}>
+                    <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+                    <li><Link to="/about" onClick={closeMenu}>About</Link></li>
+                    <li><Link to="/membership" onClick={closeMenu}>MemberShip</Link></li>
+                    <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
+                    <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
+                </ul>
 
-            <button className="join-btn">
-                Join Now
-            </button>
+                <button className="join-btn">
+                    Join Now
+                </button>
 
-        </nav> 
+                <div
+                    className={menuOpen ? "hamburger active" : "hamburger"}
+                    onClick={() => setMenuOpen(!menuOpen)}
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                {menuOpen && <div className="overlay" onClick={closeMenu}></div>}
+
+            </nav>
         </>
     )
 }

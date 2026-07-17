@@ -5,6 +5,8 @@
     padding:100px 8%;
 
     background:#181818;
+
+    overflow:hidden;
 }
 
 .membership-heading{
@@ -21,6 +23,10 @@
     letter-spacing:3px;
 
     margin-bottom:15px;
+
+    opacity:0;
+
+    animation:fadeUp .8s ease forwards;
 }
 
 .membership-heading h2{
@@ -30,6 +36,12 @@
     font-size:2.8rem;
 
     margin-bottom:20px;
+
+    opacity:0;
+
+    animation:fadeUp .8s ease forwards;
+
+    animation-delay:.1s;
 }
 
 .membership-heading p{
@@ -41,6 +53,12 @@
     margin:auto;
 
     line-height:1.8;
+
+    opacity:0;
+
+    animation:fadeUp .8s ease forwards;
+
+    animation-delay:.2s;
 }
 
 .membership-container{
@@ -52,6 +70,64 @@
     gap:30px;
 
     flex-wrap:wrap;
+}
+
+.membership-container .membership-card{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    animation:cardEnter .7s ease forwards;
+}
+
+.membership-container .membership-card:nth-child(1){
+
+    animation-delay:.3s;
+}
+
+.membership-container .membership-card:nth-child(2){
+
+    animation-delay:.45s;
+}
+
+.membership-container .membership-card:nth-child(3){
+
+    animation-delay:.6s;
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+}
+
+@keyframes cardEnter{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
 }
 
 @media(max-width:900px){

@@ -36,7 +36,7 @@ const Trainers = () => {
 
         <TrainerCard
           image={trainer1}
-          name="Sophia Miller"
+          name="Jhon due"
           role="Yoga Instructor"
           experience="6+ Years Experience"
           speciality="Yoga & Flexibility"

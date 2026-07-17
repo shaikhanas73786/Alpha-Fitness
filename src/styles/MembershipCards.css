@@ -1,133 +1,144 @@
 .membership-card{
 
-    width:320px;
+    width: 320px;
 
-    background:#1f1f1f;
+    background: #1f1f1f;
 
-    border:1px solid #333;
+    border: 1px solid #333;
 
-    border-radius:18px;
+    border-radius: 18px;
 
-    padding:40px 30px;
+    padding: 40px 30px;
 
-    text-align:center;
+    text-align: center;
 
-    transition:.4s;
+    cursor: pointer;
 
-    cursor:pointer;
+    transition: transform .4s ease, box-shadow .4s ease, border-color .4s ease;
 }
 
 .membership-card:hover{
 
-    transform:translateY(-10px);
+    transform: translateY(-10px);
 
-    box-shadow:0 15px 30px rgba(255,255,255,.08);
+    box-shadow: 0 15px 30px rgba(255,255,255,.08);
 
-    border-color:#ffffff;
+    border-color: #ffffff;
 }
 
 /* Plan Name */
 
 .plan-name{
 
-    color:#ffffff;
+    color: #ffffff;
 
-    font-size:30px;
+    font-size: 30px;
 
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 /* Price */
 
 .plan-price{
 
-    color:#ffffff;
+    color: #ffffff;
 
-    font-size:45px;
+    font-size: 45px;
 
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 
 .plan-price span{
 
-    font-size:18px;
+    font-size: 18px;
 
-    color:#bdbdbd;
+    color: #bdbdbd;
 
-    font-weight:400;
+    font-weight: 400;
 }
 
 /* Features */
 
 .plan-features{
 
-    list-style:none;
+    list-style: none;
 
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 
 .plan-features li{
 
-    color:#d6d6d6;
+    color: #d6d6d6;
 
-    font-size:17px;
+    font-size: 17px;
 
-    margin:15px 0;
+    margin: 15px 0;
+
+    transition: transform .3s ease, color .3s ease;
+}
+
+.membership-card:hover .plan-features li{
+
+    transform: translateX(4px);
+
+    color: #ffffff;
 }
 
 /* Button */
 
 .plan-btn{
 
-    width:100%;
+    width: 100%;
 
-    padding:14px;
+    padding: 14px;
 
-    border:none;
+    border: none;
 
-    border-radius:10px;
+    border-radius: 10px;
 
-    background:#ececec;
+    background: #ececec;
 
-    color:#111111;
+    color: #111111;
 
-    font-size:16px;
+    font-size: 16px;
 
-    font-weight:600;
+    font-weight: 600;
 
-    cursor:pointer;
+    cursor: pointer;
 
-    transition:.3s;
+    transition: .3s;
 }
 
 .plan-btn:hover{
 
-    background:#ffffff;
+    background: #ffffff;
 
-    transform:scale(1.03);
+    transform: scale(1.03);
+
+    box-shadow: 0 0 18px rgba(255,255,255,.4);
 }
 
-/* Responsive */
+/* ================= RESPONSIVE ================= */
 
 @media(max-width:900px){
 
 .membership-card{
 
-    width:100%;
+    width: 100%;
 
-    max-width:350px;
+    max-width: 350px;
 
-    margin:auto;
+    margin: auto;
 }
 
 .plan-name{
 
-    font-size:26px;
+    font-size: 26px;
 }
 
 .plan-price{
 
-    font-size:38px;
+    font-size: 38px;
 }
 
 }

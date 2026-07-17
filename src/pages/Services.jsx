@@ -4,9 +4,9 @@ import Footer from "../components/Footer.jsx"
 const Services = () => {
   return (
     <>
-      <Navbar/>
+    
       <OurServices/>
-    <Footer/>
+    
     </>
   )
 }

@@ -1,12 +1,12 @@
 import Navbar from "../components/Navbar.jsx"
-import Membership from "../components/MemberShip.jsx"
+import Membership from "../components/Membership.jsx"
 import Footer from "../components/Footer.jsx"
 const MemberShip = () => {
   return (
     <>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Membership/>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   )
 }

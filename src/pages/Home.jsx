@@ -8,12 +8,12 @@ import Footer from "../components/Footer.jsx"
 const Home = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <Services />
       <MemberShip />
       <Trainers />
-      <Footer />
+     
     </>
   )
 }
